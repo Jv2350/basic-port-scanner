@@ -1,35 +1,36 @@
 # Basic Port Scanner
 
-This project is a beginner-friendly Python port scanner with a simple Tkinter GUI. It demonstrates basic network reconnaissance by checking whether selected TCP ports are open or closed on a target host.
+This project now includes two versions of the same idea:
+
+- `port_scanner_gui.py`: a desktop GUI made with Tkinter
+- `app.py`: a deployable web app made with Streamlit
+
+Both versions demonstrate basic **network reconnaissance** by checking whether selected TCP ports are open or closed on a target host.
 
 ## Features
 
 - Scan common ports like `21`, `22`, `80`, `443`, and `8080`
 - Scan a custom range of ports
 - Scan a custom comma-separated list of ports
-- Display open and closed results in a desktop GUI
-- Uses only Python standard library modules: `socket`, `threading`, and `tkinter`
+- Show open and closed TCP ports
+- Built with Python sockets
 
-## Run the app
+## Run locally
 
-Make sure Python 3 is installed, then run:
+### Desktop version
 
 ```bash
 python3 port_scanner_gui.py
 ```
 
-## How it works
+### Web version
 
-1. Enter a hostname or IP address.
-2. Choose whether to scan common ports, a range, or a custom list.
-3. Click **Start Scan**.
-4. The app uses `socket.connect_ex()` to test each TCP port.
-5. Results appear as `OPEN` or `CLOSED`.
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
 
 ## Cybersecurity concept
 
-This project demonstrates **network reconnaissance**, which is the process of gathering information about a target system before deeper security testing. Port scanning helps identify which services may be exposed.
-
-## Important note
-
-Use this tool only on devices, labs, or servers you own or are explicitly allowed to test.
+Port scanning is part of network reconnaissance. It helps identify services exposed on a system before deeper security testing begins.
