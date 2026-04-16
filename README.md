@@ -23,7 +23,18 @@ Both versions demonstrate basic **network reconnaissance** by checking whether s
 python3 port_scanner_gui.py
 ```
 
+![Desktop Version Screenshot](public/Desktop%20version.png)
+
+---
+
+<video width="320" height="240" controls>
+  <source src="public/Desktop%20version.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ### Web version
+
+Access the deployed web app at: [https://port-scanner-basic.streamlit.app/](https://port-scanner-basic.streamlit.app/)
 
 ```bash
 pip install -r requirements.txt
